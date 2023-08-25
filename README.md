@@ -1,4 +1,4 @@
-# psd-converter
+# @ice-fruits/psd-converter
 
 A simple utils for create psd on web
 
