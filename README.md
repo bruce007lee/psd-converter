@@ -1,5 +1,7 @@
 # @ice-fruits/psd-converter
 
+[![npm version](https://img.shields.io/npm/v/@ice-fruits/psd-converter.svg?style=flat-square)](https://www.npmjs.com/package/@ice-fruits/psd-converter)
+
 A simple utils for create psd on web
 
 ## Useage
@@ -53,6 +55,6 @@ saveAs(buffer, 'demo.psd');
 
 ## Demo
 
-[Create PSD Sample](https://unpkg.com/@ice-fruits/psd-converter@1.0.0/build/index.html)
+[Create PSD Sample](https://unpkg.com/@ice-fruits/psd-converter@1.0.1/build/index.html)
 
-(You can change the `@1.0.0` in demo url to any version which you want)
+(You can change the `@1.0.1` in demo url to any version which you want)
