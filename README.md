@@ -55,6 +55,6 @@ saveAs(buffer, 'demo.psd');
 
 ## Demo
 
-[Create PSD Sample](https://unpkg.com/@ice-fruits/psd-converter@1.0.2/build/index.html)
+[Create PSD Sample](https://unpkg.com/@ice-fruits/psd-converter@1.0.3/build/index.html)
 
-(You can change the `@1.0.2` in demo url to any version which you want)
+(You can change the `@1.0.3` in demo url to any version which you want)

@@ -14,11 +14,12 @@ export default class Parser {
 
   /**
    * 解析
+   * @TODO
    */
   async psd2Schema(buffer: Buffer): Promise<string> {
     const psd = readPsd(buffer, { skipLayerImageData: true, skipCompositeImageData: true, skipThumbnail: true });
-    console.log('[psd]:', JSON.stringify(psd.children, null, 2));
-    return '';
+    // console.log('[psd]:', JSON.stringify(psd.children, null, 2));
+    return JSON.stringify(psd);
   }
 
   /**
@@ -44,6 +45,7 @@ export default class Parser {
             left: element.x,
             top: element.y,
             opacity: element.opacity,
+            hidden: element.hidden === true,
             imageData: element.imageData ? element.imageData : await loadImageData(element.src),
           });
         } else if (element.type === 'text') {
@@ -71,6 +73,7 @@ export default class Parser {
           layers.push({
             name: element.name,
             opacity: element.opacity,
+            hidden: element.hidden === true,
             text: {
               transform: [
                 Math.cos(radians),

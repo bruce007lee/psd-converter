@@ -8,6 +8,10 @@ export type BaseElement = {
    * 透明度
    */
   opacity?: number;
+  /**
+   * 是否隐藏
+   */
+  hidden?: boolean;
 };
 
 export type ImageElement = BaseElement & {
